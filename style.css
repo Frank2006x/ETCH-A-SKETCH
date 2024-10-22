@@ -21,6 +21,7 @@ body{
     border: 0.2px solid rgb(204, 203, 203);
 }
 #cell:hover{
-    border: 0.2px solid rgb(0, 0, 0);
+    border: 1.2px solid rgb(0, 0, 0);
     background: rgb(212, 210, 210);
 }
+
