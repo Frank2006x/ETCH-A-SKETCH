@@ -1,0 +1,26 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color: rgba(240, 235, 240, 0.856);
+}
+
+
+#sketch-area{
+    border: 2px solid rgb(3,2,3);
+    display:flex;
+    background-color: rgb(224, 247, 247);
+    margin:100px auto;
+    flex-wrap: wrap;
+     /*100px for top&buttom and auto for right&left which center the area */
+}
+#cell{
+    border: 0.2px solid rgb(204, 203, 203);
+}
+#cell:hover{
+    border: 0.2px solid rgb(0, 0, 0);
+    background: rgb(212, 210, 210);
+}
