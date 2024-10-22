@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Spray+Paint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -5,7 +7,8 @@
 
 
 body{
-    background-color: rgba(240, 235, 240, 0.856);
+   background-color: #060d05;
+    
 }
 
 
@@ -13,7 +16,7 @@ body{
     border: 2px solid rgb(3,2,3);
     display:flex;
     background-color: rgb(224, 247, 247);
-    margin:100px auto;
+    margin: 30px auto;
     flex-wrap: wrap;
      /*100px for top&buttom and auto for right&left which center the area */
 }
@@ -21,7 +24,44 @@ body{
     border: 0.2px solid rgb(204, 203, 203);
 }
 #cell:hover{
-    border: 1.2px solid rgb(0, 0, 0);
+    border: 1.5px solid rgb(255, 0, 0);
     background: rgb(212, 210, 210);
 }
 
+h1{
+    font-family: "Rubik Spray Paint", system-ui;
+    font-weight: 400;
+    font-size: 40px;
+    -webkit-text-stroke: 0.5px #00ff15;
+    font-style: normal;
+    text-align: center;
+    margin-top: 30px;
+}
+h1:hover{
+    -webkit-text-stroke: 0.5px #ff0000;
+
+}
+#buttons{
+    margin-top: 100px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+button{
+    font-family: "Playwrite GB S", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    width: 200px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color:#299211 ;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+button:hover{
+    background-color:#58fb33d7;
+}

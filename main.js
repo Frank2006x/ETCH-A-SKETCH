@@ -1,4 +1,4 @@
-const gridsize = 400;
+const gridsize =500;
 let sqSize=16;
 
 const sketch_area=document.getElementById('sketch-area');
