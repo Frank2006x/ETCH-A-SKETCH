@@ -7,16 +7,16 @@
 
 
 body{
-   background-color: #060d05;
+   background-color: #0e0a17 ;
     
 }
 
 
 #sketch-area{
-    border: 2px solid rgb(3,2,3);
+    border: 2px solid rgb(0, 0, 0);
     display:flex;
     background-color: rgb(224, 247, 247);
-    margin: 30px auto;
+    margin: 30px 100px 30px 200px;
     flex-wrap: wrap;
      /*100px for top&buttom and auto for right&left which center the area */
 }
@@ -47,6 +47,8 @@ h1:hover{
     display: flex;
     flex-direction: column;
     justify-content: left;
+    margin-left: 70px;
+    gap:10px;
 }
 button{
     font-family: "Playwrite GB S", cursive;
@@ -59,7 +61,7 @@ button{
     background-color:#299211 ;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     transition: background-color 0.3s ease;
 }
 button:hover{
