@@ -41,6 +41,7 @@ function changeColor(e){
 
     }else if (tool=='eraser'){
         this.style.background='rgb(224, 247, 247)'
+        this.style.border='0.2px solid rgb(204, 203, 203)'
     }else if (tool=='random'){
         this.style.background=randomColor()
     }

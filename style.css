@@ -21,11 +21,11 @@ body{
      /*100px for top&buttom and auto for right&left which center the area */
 }
 #cell{
-    border: 0.2px solid rgb(204, 203, 203);
+    border: 0.1px solid rgb(204, 203, 203);
     
 }
 #cell:hover{
-    border: 1.5px solid rgb(255, 0, 0);
+    
     background: rgb(212, 210, 210);
 }
 
