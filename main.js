@@ -22,14 +22,14 @@ function randomColor(){
         return 'black'
     }
 }
-function changeColor(){
-    
+function changeColor(e){
+    if (e.type === 'mouseover' && !mouseDown) return
     
     let opacity=parseFloat(this.getAttribute('data-opacity'))
     if (tool=='pencil'){
         this.style.background='black'
         if (opacity>=1){
-            opacity==1;
+            opacity=1;
             
         }
         else{
@@ -57,7 +57,16 @@ function createGridCells(){
         sketch_area.appendChild(gridcell);
 
 
+        gridcell.addEventListener('mousedown', () => {
+            mouseDown = true;
+        });
+        
+        gridcell.addEventListener('mouseup', () => {
+            mouseDown = false;
+        });
         gridcell.addEventListener('mouseover',changeColor)
+
+        // gridcell.addEventListener('mousedown')
         
 
     }
