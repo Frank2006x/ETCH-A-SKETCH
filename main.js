@@ -1,17 +1,18 @@
 const gridsize =500;
 let sqSize=16;
-let tool = false;
+let tool='random'
 
 const sketch_area=document.getElementById('sketch-area');
 const changeGrid=document.getElementById('changeGrid')
 const pencil=document.getElementById('pencil')
+const eraser=document.getElementById('eraser')
 
 
 sketch_area.style.width=`${gridsize}px`;
 sketch_area.style.height=`${gridsize}px`;
 
 function randomColor(){
-    if (tool==false){
+    if (tool=='random'){
         let r =Math.random()*256;
         let g =Math.random()*256;
         let b =Math.random()*256;
@@ -23,11 +24,11 @@ function randomColor(){
 }
 function changeColor(){
     
-    this.style.background=randomColor()
+    
     let opacity=parseFloat(this.getAttribute('data-opacity'))
-    if (tool==true){
-        
-        if (opacity==1){
+    if (tool=='pencil'){
+        this.style.background='black'
+        if (opacity>=1){
             opacity==1;
             
         }
@@ -38,6 +39,10 @@ function changeColor(){
         this.setAttribute('data-opacity', opacity);
 
 
+    }else if (tool=='eraser'){
+        this.style.background='rgb(224, 247, 247)'
+    }else if (tool=='random'){
+        this.style.background=randomColor()
     }
 }
 
@@ -76,12 +81,16 @@ changeGrid.addEventListener('click',()=>{
 
 })
 random.addEventListener('click',()=>{
-    tool=false
+    tool='random'
 })
 pencil.addEventListener('click',()=>{
-    tool=true
+    tool='pencil'
 
 })
+eraser.addEventListener('click',()=>{
+    tool='eraser'
+}
+)
 
 
 createGridCells()

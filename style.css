@@ -22,6 +22,7 @@ body{
 }
 #cell{
     border: 0.2px solid rgb(204, 203, 203);
+    
 }
 #cell:hover{
     border: 1.5px solid rgb(255, 0, 0);
